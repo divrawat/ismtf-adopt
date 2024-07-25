@@ -6,6 +6,7 @@ import { APP_NAME, DOMAIN, MANGA_NAME, IMAGES_DOMAIN, NEXT_PREVIOUS_PREFIX, IMAG
 import DisqusComments from '@/components/DisQus';
 export const runtime = 'experimental-edge';
 import dynamic from "next/dynamic";
+import React from 'react';
 const AdSense = dynamic(() => import('@/components/Adsense'), { ssr: false });
 
 export default function Chapter({ chapterNumber, imageUrls, totalChapters, params, errorcode }) {
